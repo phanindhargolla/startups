@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1 class="text-primary text-center">Profit Prediction for StartUps</h1>
+    <hr/>
+
+    <br/>
+
+    <div class="container">
+
+      <form method='POST' action="/predict">
+        <div class="col-md-6">
+          <div class="form-group">
+          <label for="newyork">NewYork</label>
+          <input type="text" id="newyork" name="NewYork" class="form-control"><br/>
+          <small class="text-muted">Enter 1 if the location of the startUp is Newyork, Otherwise 0</small>
+        </div>
+
+        <div class="form-group">
+          <label for="california">California</label>
+          <input type="text" id="california" name="California" class="form-control"><br/>
+          <small class="text-muted">Enter 1 if the location of the startUp is California, Otherwise 0</small>
+        </div>
+
+        <div class="form-group">
+          <label for="florida">Florida</label>
+          <input type="text" id="florida" name="Florida" class="form-control"><br/>
+          <small class="text-muted">Enter 1 if the location of the startUp is Florida, Otherwise 0</small>
+        </div>
+
+        <div class="form-group">
+          <label for="rndspend">R&D Spend</label>
+          <div class="input-group-prepend">
+            <span class="input-group-text text-primary">$</span>
+          <input type="text" id="rndspend" name="RnDSpend" class="form-control"><br/>
+          <span class="input-group-text text-primary">.00</span>
+           </div>
+            <small class="text-muted">Please enter the amount to be invested in R&D department</small>
+        </div>
+
+        <div class="form-group">
+          <label for="Administration">Administration</label>
+           <div class="input-group-prepend">
+            <span class="input-group-text text-primary">$</span>
+          <input type="text" id="administration" name="Administration" class="form-control"><br/>
+           <span class="input-group-text text-primary">.00</span>
+           </div>
+          <small class="text-muted">Please enter the amount to be invested in Adminstration department</small>
+        </div>
+
+        <div class="form-group">
+          <label for="market">Marketing Spend</label>
+           <div class="input-group-prepend">
+             <span class="input-group-text text-primary">$</span>
+          <input type="text" id="market" name="Market" class="form-control"><br/>
+          <span class="input-group-text text-primary">.00</span>
+           </div>
+          <small class="text-muted">Please enter the amount to be invested in Marketing Spend department</small>
+        </div>
+
+        <input class="btn btn-primary" type="submit"/>
+      </div>
+    </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
