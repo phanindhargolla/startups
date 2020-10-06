@@ -22,7 +22,7 @@ def predict():
             data = [RnDSpend, Administration, Market, newYork, California, Florida]
             data_arr = np.array(data)
             data_arr = data_arr.reshape(1, -1)
-            regression = pickle.load(open('F:\\model deployement\\model_deployement\\multiple_linear_model.pkl', 'rb'))
+            regression = pickle.load(open('.\multiple_linear_model.pkl', 'rb'))
             pred = regression.predict(data_arr)
             pred = round(float(pred), 2)
 
